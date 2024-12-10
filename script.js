@@ -1,4 +1,9 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('message').innerText = 'Hello, World!';
+    const button = document.getElementById('clickButton');
+    const message = document.getElementById('message');
+
+    button.addEventListener('click', () => {
+        message.innerText = 'You clicked the button! Hello, World!';
+    });
 });
